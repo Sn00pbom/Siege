@@ -1,0 +1,48 @@
+
+
+NOTES
+-------------
+
+- turn based
+- 1 action/ turn
+- abilities will be drawn, units will not.
+- abilities cost energy
+- units cost matter
+- max hand size 10
+
+Cards
+{
+    Units
+    {
+        - pawn (costs matter to summon, can be summoned at any time with factory base stats)
+        - player (3hp, 1dmg)
+    }
+
+    Spells (cost energy to use)
+    {
+        - fortify (give player unit __ extra hp)
+        - sabotage units this turn
+        - sabotage player
+        - strengthen (give 1 unit __ extra damage)
+        - increase matter gained per turn
+    }
+}
+
+Primary Resources
+{
+    - matter variable gain
+    - energy
+}
+
+Player Actions
+{
+    - create unit
+    - use ability
+}
+
+Gamestate Variables
+{
+    - hand[] 0-100 (akin to deck size)
+    - health & damage & location of each unit
+
+}
